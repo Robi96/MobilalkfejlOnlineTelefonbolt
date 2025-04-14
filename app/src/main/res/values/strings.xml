@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Best Phone</string>
+    <string name="username">Felhasználónév</string>
+    <string name="password">Jelszó</string>
+    <string name="login">Bejelentkezés</string>
+    <string name="intro_text_2">A vásárláshoz kérem jelentkezzen be, vagy regisztráljon!</string>
+    <string name="intro_text_1">Üdvözöljük a Best Phone webes telefonáruházban!</string>
+    <string name="register">Regisztráció</string>
+    <string name="email">Email cím</string>
+    <string name="password_confirm">Jelszó mégegyszer</string>
+    <string name="cancel">Mégsem</string>
+    <string name="phone">Telefonszám</string>
+</resources>

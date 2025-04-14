@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1068863742643",
+    "project_id": "mobilalkfejlphoneshop",
+    "storage_bucket": "mobilalkfejlphoneshop.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068863742643:android:31aac67a0598e565ee86c6",
+        "android_client_info": {
+          "package_name": "com.example.mobilalkfejl_online_telefonbolt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1068863742643-4107h95m0fge0k5b9suqhbcos4hkvf05.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mobilalkfejl_online_telefonbolt",
+            "certificate_hash": "5a3735cd6d8315b5fc0e8da5c44d338a6ed9711a"
+          }
+        },
+        {
+          "client_id": "1068863742643-kb2bbfe2ps1k2jfg0idmikbh2eet6hev.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdykrm9_BtoIMXX2_eCOX8ONoFU6mall8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1068863742643-kb2bbfe2ps1k2jfg0idmikbh2eet6hev.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
