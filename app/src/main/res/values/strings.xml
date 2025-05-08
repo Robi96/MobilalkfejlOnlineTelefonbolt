@@ -1,6 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Best Phone</string>
     <string name="username">Felhasználónév</string>
+    <string name="user">E-mail</string>
     <string name="password">Jelszó</string>
     <string name="login">Bejelentkezés</string>
     <string name="intro_text_2">A vásárláshoz kérem jelentkezzen be, vagy regisztráljon!</string>
@@ -10,4 +12,45 @@
     <string name="password_confirm">Jelszó mégegyszer</string>
     <string name="cancel">Mégsem</string>
     <string name="phone">Telefonszám</string>
+    <string name="placeholder">Kép betöltése sikertelen</string>
+    <string name="addToCart">Kosárba tesz</string>
+    <string name="search">Keresés</string>
+    <string name="cart">Kosár</string>
+    <string name="logout">Kijelentkezés</string>
+    <string name="back">Vissza</string>
+    <string name="empty_cart">Kosár kiürítése</string>
+    <string name="removeItem">Termék eltávolítása</string>
+
+    <string-array name="phone_names">
+        <item>iPhone 16</item>
+        <item>iPhone 15</item>
+        <item>Samsung Galaxy A56</item>
+        <item>Samsung Galaxy S25</item>
+        <item>Xiaomi 14t</item>
+        <item>Xiaomi Redmi Note 14 Pro</item>
+    </string-array>
+    <string-array name="phone_desc">
+        <item>Ez egy iPhone 16.</item>
+        <item>Ez egy iPhone 15.</item>
+        <item>Ez egy Samsung Galaxy A56.</item>
+        <item>Ez egy Samsung Galaxy S25.</item>
+        <item>Ez egy Xiaomi 14t.</item>
+        <item>Ez egy Xiaomi Redmi Note 14 Pro.</item>
+    </string-array>
+    <string-array name="phone_price">
+        <item>350000</item>
+        <item>280000</item>
+        <item>200000</item>
+        <item>250000</item>
+        <item>180000</item>
+        <item>400000</item>
+    </string-array>
+    <array name="phone_images">
+        <item>@drawable/iphone16_128gb</item>
+        <item>@drawable/iphone_15_128gb</item>
+        <item>@drawable/samsung_galaxy_a56_128gb</item>
+        <item>@drawable/samsung_galaxy_s25_ultra_256gb</item>
+        <item>@drawable/xiaomi_14t_256gb</item>
+        <item>@drawable/xiaomi_redmi_note_14_pro_256gb</item>
+    </array>
 </resources>

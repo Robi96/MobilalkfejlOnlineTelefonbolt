@@ -14,6 +14,7 @@ android {
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
+        multiDexEnabled = true
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -40,8 +41,16 @@ dependencies {
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     implementation(libs.firebase.auth)
+    implementation(libs.androidx.constraintlayout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
-    implementation(platform("com.google.firebase:firebase-bom:33.12.0"))
+    implementation(libs.firebase.bom.v33130)
+    implementation (libs.firebase.firestore)
+    implementation (libs.multidex)
+
+    implementation (libs.androidx.recyclerview)
+    implementation (libs.androidx.recyclerview.selection)
+    implementation (libs.glide.v4160)
+    implementation (libs.cardview)
 }

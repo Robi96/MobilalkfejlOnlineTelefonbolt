@@ -19,12 +19,14 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
     private static final String LOG_TAG = MainActivity.class.getName();
     private FirebaseAuth mAuth;
     private static final int REGISTER_KEY = 42;
 
-    EditText usernameStr;
+    EditText userEmailStr;
     EditText passwordStr;
 
     @Override
@@ -41,13 +43,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void login(View view) {
-        usernameStr = findViewById(R.id.UserName);
+        userEmailStr = findViewById(R.id.UserName);
         passwordStr = findViewById(R.id.Password);
 
-        String username = usernameStr.getText().toString();
+        String userEmail = userEmailStr.getText().toString();
         String password = passwordStr.getText().toString();
-        if (username.isEmpty() && password.isEmpty()) {
-            mAuth.signInWithEmailAndPassword(username, password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+        if (!userEmail.isEmpty() && !password.isEmpty()) {
+            mAuth.signInWithEmailAndPassword(userEmail, password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
@@ -74,6 +76,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void startShopSite() {
         Intent intent = new Intent(this, ShopMainSite.class);
+        intent.putExtra("count", 0);
+        ArrayList<String> temp = new ArrayList<>();
+        intent.putExtra("names", temp);
         startActivity(intent);
     }
 }

@@ -19,6 +19,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+import java.util.Objects;
+
 public class RegisterActivity extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
@@ -61,6 +63,8 @@ public class RegisterActivity extends AppCompatActivity {
 
         if(!Password.equals(PasswordConf)) {
             Log.e(LOG_TAG, "Nem egyezik a két jelszó!");
+        }else if(Password.isEmpty() || PasswordConf.isEmpty() || Username.isEmpty() || Email.isEmpty()){
+            Log.e(LOG_TAG, "Felhasználónév, email és jelszó kitöltése kötelező!");
         }else {Log.i(LOG_TAG, "Regisztrált: " + Username + ", Email: " + Email + ", jelszava: " + Password);
             mAuth.createUserWithEmailAndPassword(Email, Password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                 @Override
@@ -70,7 +74,7 @@ public class RegisterActivity extends AppCompatActivity {
                         startShopSite();
                     }else {
                         Log.d(LOG_TAG, "Sikertelen regisztráció");
-                        Toast.makeText(RegisterActivity.this, "Sikertelen regisztráció" + task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                        Toast.makeText(RegisterActivity.this, "Sikertelen regisztráció" + Objects.requireNonNull(task.getException()).getMessage(), Toast.LENGTH_LONG).show();
                     }
                 }
             });

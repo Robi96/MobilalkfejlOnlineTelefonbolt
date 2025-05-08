@@ -10,4 +10,5 @@
     <string name="password_confirm">Jelszó mégegyszer</string>
     <string name="cancel">Mégsem</string>
     <string name="phone">Telefonszám</string>
+    <string name="placeholder">Kép betöltése sikertelen</string>
 </resources>
